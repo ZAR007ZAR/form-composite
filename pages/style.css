@@ -1,8 +1,33 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot");
+  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff2") format("woff2"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff") format("woff"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Bold/Raleway-Bold.eot");
+  src: url("fonts/Raleway-Bold/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Bold/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Regular/Raleway-Regular.eot");
+  src: url("fonts/Raleway-Regular/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Regular/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular/Raleway-Regular.woff") format("woff"), url("fonts/Raleway-Regular/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: "Raleway";
 }
 
 a {
@@ -11,6 +36,13 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.container {
+  max-width: 1520px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 header {

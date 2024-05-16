@@ -10,7 +10,9 @@ header
 	width: 40px;
 	height: 2px;
 	background: white;
+	transition: all 0.3s;
 }
+
 .header__burger-line--small
 {
 	width: 30px;
@@ -21,6 +23,15 @@ header
 	align-items: end;
 	flex-direction: column;
 	gap: 10px;
+}
+.header__burger.active .header__burger-line
+{
+	width: 40px;
+	transform: translate(0px, 7px) rotate(45deg);
+}
+.header__burger.active .header__burger-line--small
+{
+	transform: translate(-1px, -4px) rotate(-45deg);	
 }
 .header__wrap
 {

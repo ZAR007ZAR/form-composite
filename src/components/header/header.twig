@@ -1,13 +1,19 @@
 <header>
-		<div class="container container-flex">
-			{% include 'assets/svg/logo.svg' %}
-			<div class="header__burger active" onclick="mainObj.header.show(this)">
+	<div class="container container-flex">
+		<a href="#">{% include 'assets/svg/logo.svg' %}</a>
+		<div class="header__link-wrap">
+			<div class="phone-tab">
+				{% include 'assets/svg/phone.svg' %}
+				<a href="tel:+74952155512">+7 (495) 21-555-12</a>
+			</div>
+			<div class="header__burger" onclick="mainObj.header.show(this)">
 				<div class="header__burger-line"></div>
 				<div class="header__burger-line header__burger-line--small"></div>
 			</div>
 		</div>
-		<div class="header__wrap">
-			<div class="container">
+	</div>
+	<div class="header__wrap _headerWrap">
+		<div class="container">
 			<ul class="header__list">
 				<li class="header__list-item">
 					<a href="#">О компании</a>
@@ -43,7 +49,7 @@
 			</div>
 			<button class="header__btn">Задать вопрос</button>
 		</div>
-		</div>
+	</div>
 </header>
 
 

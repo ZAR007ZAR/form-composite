@@ -29,7 +29,7 @@
 			</ul>
 		<div class="header__link-wrap">
 			<div class="phone-tab">
-				{% include 'assets/svg/phone.svg' %}
+				{% include 'assets/svg/phoneLogo.svg' %}
 				<a href="tel:+74952155512">+7 (495) 21-555-12</a>
 			</div>
 			<div class="header__burger" onclick="mainObj.header.show(this)">
@@ -49,10 +49,12 @@
 					<a href="#">Проекты</a>
 				</li>
 				<li class="header__list-item">
-					<a href="#">Продукция</a>
+					{% include "components/accordeon/accordeon.twig" with {'items':
+					['<a href="#">ssss</a>','<a href="#">s2</a>'],name: 'первый',pathImg:'images/arrow.svg'} %}
 				</li>
 				<li class="header__list-item">
-					<a href="#">Испытания</a>
+					{% include "components/accordeon/accordeon.twig" with {'items':
+					['<a href="#">ssss</a>','<a href="#">s2</a>'],name: 'второй',pathImg:'images/gr-ar.svg'} %}
 				</li>
 				<li class="header__list-item">
 					<a href="#">Карьера</a>

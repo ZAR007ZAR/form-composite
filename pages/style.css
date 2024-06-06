@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot");
-  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff2") format("woff2"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff") format("woff"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.ttf") format("truetype");
-  font-weight: 600;
+  src: url("fonts/Raleway-Bold/Raleway-Bold.eot");
+  src: url("fonts/Raleway-Bold/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Bold/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway-Bold/Raleway-Bold.eot");
-  src: url("fonts/Raleway-Bold/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Bold/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold/Raleway-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot");
+  src: url("fonts/Raleway-SemiBold/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff2") format("woff2"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.woff") format("woff"), url("fonts/Raleway-SemiBold/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -79,12 +79,10 @@ header {
   flex-direction: column;
   gap: 10px;
 }
-
 .header__burger.active .header__burger-line {
   width: 40px;
   transform: translate(0px, 7px) rotate(45deg);
 }
-
 .header__burger.active .header__burger-line--small {
   transform: translate(-1px, -4px) rotate(-45deg);
 }
@@ -116,6 +114,9 @@ header {
   margin-bottom: 20px;
 }
 
+.header__list-item {
+  color: rgb(234, 234, 234);
+}
 .header__list-item a {
   font-size: 14px;
   font-weight: 500;
@@ -129,14 +130,12 @@ header {
   gap: 15px;
   margin-bottom: 25px;
 }
-
 .header__phone a {
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
   color: rgb(255, 255, 255);
 }
-
 .header__phone a:last-child {
   color: rgb(234, 234, 234);
   font-size: 15px;
@@ -155,6 +154,10 @@ header {
 }
 
 .header__list-top {
+  display: none;
+}
+
+.header__wrap-subtitle {
   display: none;
 }
 
@@ -198,6 +201,7 @@ header {
     color: rgb(111, 113, 113);
     padding-top: 60px;
     margin-bottom: 45px;
+    display: block;
   }
   .header__list {
     display: flex;
@@ -275,20 +279,41 @@ footer {
   background: green;
 }
 
-.catalog {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.accordeon__content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.accordeon__arrow {
+  transition: all 0.3s;
+}
+
+.accordeon__arrow.active {
+  transform: rotate(180deg);
+}
+
+.production__slider-arows svg {
+  background: blue;
+}
+
+.production {
+  background: blue;
+}
+
+.production__title-wrap span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16.5px;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
 
-.catalog__item {
-  background: black;
-  flex-basis: 30%;
-  height: 100px;
-}
-
-.news__item {
-  background: green;
-  margin-bottom: 10px;
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  max-width: 280px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
 }

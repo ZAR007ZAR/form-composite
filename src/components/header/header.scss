@@ -4,6 +4,7 @@ header
 	position: relative;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	margin-bottom: 286px;
 }
 .header__burger-line
 {
@@ -257,6 +258,13 @@ header
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 19.8px;
+	}
+	.header__list--top a
+	{
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 17.6px;
+		color:#EAEAEA;
 	}
 }
 

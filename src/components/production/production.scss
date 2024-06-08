@@ -1,9 +1,20 @@
 .production
 {
-	background: blue;
+	background-image: url("images/bg(1).png");
+	padding-top: 342px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.production__slider-wrap
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
 }
 .production__title-wrap span
 {
+	display: inline-block;
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 16.5px;
@@ -15,40 +26,21 @@ h1
 	font-size: 25px;
 	font-weight: 700;
 	line-height: 30px;
-	color:#FFFFFF;
 	max-width: 280px;
+	color: rgba(255, 255, 255, 1);
 	margin-bottom: 40px;
-}
-.production__slider-wrap
-{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-bottom: 10px;
 }
 .production__slider-number
 {
 	display: flex;
 	gap: 7px;
 }
-.production__slider-arows--wrap
-{
-	display: flex;
-	gap: 10px;
-}
 .production__slider-items
 {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16.8px;
-	color: #FFFFFFB2;
-}
-.production__slider-pause--line
-{
-	width: 1.8px;
-	height: 13.2px;
-	gap: 0px;
-	background: #FFFFFF;
+	color: hsla(0, 0%, 100%, 0.7)
 }
 .production__slider-pause
 {
@@ -58,24 +50,74 @@ h1
 	gap: 6px;
 	padding: 11.4px 13.2px;
 	border-radius: 100%;
-	background: red;
-	/*background: #FFFFFF1A;*/
+	background: hsla(0, 0%, 100%, 0.1);
+}
+.production__slider-pause--line
+{
+	width: 1.8px;
+	height: 13.2px;
+	background: hsla(0, 0%, 100%, 1);
 }
 .production__slider-arows
 {
-	display: flex;
 	padding: 11px 15px;
+	display: flex;
 	gap: 20px;
-	/*background: #FFFFFF1A;*/
-	background: red;
 	border-radius: 60px;
+	background: hsla(0, 0%, 100%, 0.1);
 }
-.production__slider-arows svg
+.production__slider-arows
 {
-	display: inline-block;
-	background: #FFFFFFB2;
+	.production__slider-arows--item svg
+	{
+		display: inline-block;
+		path
+		{
+			fill: hsla(0, 0%, 100%, 0.7);
+		}
+	}	
+}
+.production__slider-arows--item
+{
+	display: flex;
+	align-items: center;
+	&:last-child
+	{
+		svg
+		{
+			transform: rotate(180deg);
+		}
+	}
+	&.active
+	{
+		svg
+		{
+			path
+			{
+				fill: hsla(0, 0%, 100%, 1);
+			}
+		}
+	}	
+}
+.production__slider-arows--wrap
+{
+	display: flex;
+	gap: 10px;
 }
 .production__slider-lines
 {
 	padding-bottom: 30px;
+	max-width: 355px;
+	display: flex;
+	align-items: center;
+}
+.production__slider-lines--items
+{
+	background: hsla(0, 0%, 100%, 0.3);
+	flex-basis: 33%;
+	height: 1px;
+}
+.production__slider-lines--items.active
+{
+	background: hsla(0, 0%, 100%, 1);
 }

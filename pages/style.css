@@ -306,6 +306,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /*.production__slider-wrap
@@ -606,4 +607,13 @@ footer {
   	height: 2px;
   	flex-basis: 33%;
   }*/
+}
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  padding-top: 346px;
+  padding-bottom: 100px;
+  background: red;
 }

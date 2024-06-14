@@ -7,6 +7,6 @@ let mainObj =
 {
 	inition()
 	{
-		
+		this.gSlider.initSlider()
 	}
 }

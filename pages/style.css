@@ -51,19 +51,12 @@ li {
   justify-content: space-between;
 }
 
-h1 {
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-  max-width: 280px;
-  color: rgb(255, 255, 255);
-}
-
 header {
   padding-top: 12px;
   padding-bottom: 12px;
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 
 .header__burger-line {
@@ -407,6 +400,14 @@ footer {
   fill: white;
 }
 
+.production__swiper-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  max-width: 280px;
+  color: rgb(255, 255, 255);
+}
+
 /*.production__slider-number
 {
 	display: flex;
@@ -516,7 +517,7 @@ footer {
     line-height: 33px;
     margin-bottom: 35px;
   }
-  h1 {
+  .production__swiper-title {
     font-size: 55px;
     font-weight: 700;
     line-height: 66px;
@@ -615,5 +616,4 @@ footer {
 .swiper-slide {
   padding-top: 346px;
   padding-bottom: 100px;
-  background: red;
 }

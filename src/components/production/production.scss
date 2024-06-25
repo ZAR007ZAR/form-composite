@@ -1,11 +1,14 @@
 .production
 {
+	margin-bottom: 30px;
+}
+.production__slide
+{
 	background-image: url("images/bg(1).png");
 	padding-top: 342px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 30px;
-	margin-bottom: 30px;
 }
 /*.production__slider-wrap
 {
@@ -29,7 +32,10 @@
 }
 .production__slider
 {
-	position: relative;
+	position: absolute;
+	bottom: 15px;
+	z-index: 1;
+	width: 100%;
 }
 .production__slider-counter
 {
@@ -51,23 +57,21 @@
 }
 .production__slider-scrollbar
 {
-	height: 1px;
-	background: rgba(255, 255, 255, .3);
 	position: relative;
-	div
+	div.swiper-pagination
 	{
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 20%;
-		background: white;
+		height: 1px;
+		background: rgba(255, 255, 255, .3);
+		.swiper-pagination-progressbar-fill
+		{
+			background: white;
+		}
 	}
 }
 .production__slider-btns
 {
 	position: absolute;
-	right: 0;
+	right: 15px;
 	bottom: 10px;
 	display: flex;
 	align-items: center;
@@ -101,22 +105,35 @@
 	height: 36px;
 	background: rgba(255, 255, 255, .1);
 	border-radius: 60px;
-	svg
+	.swiper-button-prev,
+	.swiper-button-next
 	{
-		path
+		position: static;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 14px;
+		height: 12px;
+		&::after
 		{
-			fill: rgba(255, 255, 255, 0.7);
-		}
-		&:last-child
-		{
-			transform: rotate(180deg);
-			path
-			{
-				fill: white;
-			}
+			display: none;
 		}
 	}
+	.swiper-button-next
+	{
+		transform: rotate(180deg);
+	}
 }
+.production__swiper-title
+{
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 30px;
+	max-width: 280px;
+	color: rgba(255, 255, 255, 1);
+}
+
 /*.production__slider-number
 {
 	display: flex;
@@ -217,9 +234,9 @@
 {
 	.production
 	{
-		padding-top: 669px;
-		padding-bottom: 130px;
-		background-image: url("images/bg(2).png");
+/*		padding-top: 669px;*/
+/*		padding-bottom: 130px;*/
+/*		background-image: url("images/bg(2).png");*/
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -230,14 +247,14 @@
 		line-height: 33px;
 		margin-bottom: 35px;
 	}
-	h1
+	.production__swiper-title
 	{
 		font-size: 55px;
 		font-weight: 700;
 		line-height: 66px;
 		max-width: 681px;
 	}
-	.production__slider
+	.production__slider-flex
 	{
 		display: flex;
 		align-items: center;
@@ -259,7 +276,10 @@
 	.production__slider-scrollbar
 	{
 		width: 100%;
-		height: 2px;
+		div.swiper-pagination
+		{
+			height: 2px;
+		}
 	}
 	.production__slider-btns
 	{

@@ -755,6 +755,12 @@ footer {
     width: 110px;
     height: 80px;
   }
+  .clients__btn {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.8px;
+    height: 63px;
+  }
 }
 @media (min-width: 1350px) {
   .clients__wrap {
@@ -767,5 +773,21 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
+  }
+  .clients__titlle {
+    align-items: start;
+    flex-basis: 35%;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 36.3px;
+  }
+  .clients__wrap-list {
+    flex-basis: 58%;
+  }
+  .clients__btn {
+    max-width: 355px;
+  }
+  .clients__picture {
+    flex-basis: 58%;
   }
 }
